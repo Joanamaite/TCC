@@ -65,36 +65,11 @@ h6 span{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 16px;
-  border-radius: 8px;
-  padding: 0;
-  margin: 10px auto; /* Ajuste a margem conforme necessário */
-  cursor: pointer;
-  background-color: #ffeba7;
-}
-
-.checkbox:checked + label:before,
-.checkbox:not(:checked) + label:before {
-  position: absolute;
-  display: block;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  color: #ffeba7;
-  background-color: #102770;
-  font-family: 'unicons';
-  content: '\eb4f'; /* Corrigir a sequência de escape Unicode da flecha */
-  z-index: 20;
-  top: -10px;
-  left: -10px; /* Ajuste a posição da flecha conforme necessário */
   line-height: 36px;
   text-align: center;
   font-size: 24px;
   transition: all 0.5s ease;
 }
-
-
 .checkbox:checked + label:before {
   transform: translateX(44px) rotate(-270deg);
 }
@@ -104,15 +79,13 @@ h6 span{
   position: relative;
   width: 440px;
   max-width: 100%;
-  height: 550px;
+  height: 400px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   perspective: 800px;
-  margin: 60px auto; /* Adjust margin as needed */
+  margin-top: 60px;
 }
-
 .card-3d-wrapper {
-  
   width: 100%;
   height: 100%;
   position:absolute;    
